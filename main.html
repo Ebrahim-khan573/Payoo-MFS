@@ -16,7 +16,7 @@
                 <div class="flex  items-center">
                     <img class="w-14" src="./assets/Group.png" alt="">
                     <div>
-                        <h2 class="font-bold">$4500</h2>
+                        <h2 class="font-bold">$ <span id="main-balance">4500</span></h2>
                         <p class="font-semibold">Available Balance</p>
                     </div>
                 </div>
@@ -72,14 +72,14 @@
                             <option value="Nagad">Nagad</option>
                             <option value="Rocket">Rocket</option>
                           </select>
-                        <label class="fieldset-label">Bank Account Number</label>
-                        <input type="number" class="input" placeholder="Enter 11 digit account number" />
+                        <label  class="fieldset-label">Bank Account Number</label>
+                        <input value="01681389548" type="number" class="input" placeholder="Enter 11 digit account number" />
                         <label class="fieldset-label">Amount to add</label>
-                        <input type="number" class="input" placeholder="Add Amount to withdraw" />
+                        <input id="amount" type="number" class="input" placeholder="Add Amount to withdraw" />
                         <label class="fieldset-label">Pin</label>
-                        <input type="number" class="input" placeholder="Enter 4 digit pin number" />
+                        <input id="pin" type="number" class="input" placeholder="Enter 4 digit pin number" />
                         <div><a class="link link-hover">Forgot password?</a></div>
-                        <button class="btn btn-neutral mt-4 bg-blue-700 border-none rounded-full">Add Money</button>
+                        <button id="addMoney-btn" class="btn btn-neutral mt-4 bg-blue-700 border-none rounded-full">Add Money</button>
                       </fieldset>
                     </div>
                   </div>
@@ -87,6 +87,7 @@
               </div>
         </section>
     </section>
+    <script src="./script/addMoney.js"></script>
 </body>
 
 </html>
